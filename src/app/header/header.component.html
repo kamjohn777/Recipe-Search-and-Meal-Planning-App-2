@@ -19,7 +19,7 @@
 
    <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" routerLink="/">
-      <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      <img src="../../logo.jpg" width="30" height="30" class="d-inline-block align-top" alt="plate with food"/>
       Recipe App
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,25 +27,32 @@
     </button>
   
     <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <!-- Router Link -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/">Home</a>
-        </li>
-        <!-- Router Link -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/recipes">Recipes</a>
-        </li>
-        <!-- Router Link -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/meal-plan">Meal Plan</a>
-        </li>
-        <!-- Router Link -->
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/favorites">Favorites</a>
-        </li>
-      </ul>
-  
+        <ul class="navbar-nav">
+            <!-- Router Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/">Home</a>
+            </li>
+            <!-- Router Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/recipes">Recipes</a>
+            </li>
+            <!-- Router Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/mealplan">Meal Plan</a>
+            </li>
+            <!-- Router Link -->
+            <li class="nav-item">
+              <a class="nav-link" routerLink="/favorites">Favorites</a>
+            </li>
+          </ul>
+    </div>
+     
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <div class="user-profile">
+        <img src="profile-pic.jpg" alt="User Profile">
+        <span>User Name</span>
+      </div>
+
       <!-- Search Bar -->
       <form class="form-inline my-2 my-lg-0">
         <div class="input-group">
