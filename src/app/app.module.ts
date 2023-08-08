@@ -8,6 +8,7 @@ import { RecipeDetailComponent } from './recipe-detail/recipe-detail.component';
 import { MealPlanComponent } from './meal-plan/meal-plan.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.component';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.co
     FavoriteRecipesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    AppRoutingModule // Add AppRouting to imports
   ],
   providers: [],
   bootstrap: [AppComponent]
