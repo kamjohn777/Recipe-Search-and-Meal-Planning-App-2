@@ -1,0 +1,61 @@
+<!-- header.component.html
+<header class="app-header">
+    <div class="logo">
+      <img src="logo.png" alt="App Logo">
+      <span>Recipe App</span>
+    </div>
+    <nav class="nav-links">
+      <a routerLink="/">Home</a>
+      <a routerLink="/recipes">Recipes</a>
+      <a routerLink="/meal-plan">Meal Plan</a>
+      <a routerLink="/favorites">Favorites</a>
+    </nav>
+    <div class="user-profile">
+      <img src="profile-pic.jpg" alt="User Profile">
+      <button class="btn btn-primary">User Name</button>
+    </div>
+  </header>
+   -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/">
+      <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+      Recipe App
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <!-- Router Link -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+        <!-- Router Link -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/recipes">Recipes</a>
+        </li>
+        <!-- Router Link -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/meal-plan">Meal Plan</a>
+        </li>
+        <!-- Router Link -->
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/favorites">Favorites</a>
+        </li>
+      </ul>
+  
+      <!-- Search Bar -->
+      <form class="form-inline my-2 my-lg-0">
+        <div class="input-group">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <div class="input-group-append">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </nav>
+  
+  

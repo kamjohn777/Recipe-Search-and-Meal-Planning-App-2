@@ -9,6 +9,7 @@ import { MealPlanComponent } from './meal-plan/meal-plan.component';
 import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.component';
 import { AppRoutingModule } from './app-routing.module';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { AppRoutingModule } from './app-routing.module';
     RecipeDetailComponent,
     MealPlanComponent,
     ShoppingListComponent,
-    FavoriteRecipesComponent
+    FavoriteRecipesComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
