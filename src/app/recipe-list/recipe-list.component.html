@@ -1,1 +1,81 @@
-<p>recipe-list works!</p>
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <button class="btn btn-success">New Recipe</button>
+      </div>
+    </div>
+  <hr>
+    <div class="row">
+      <div class="col-12"> -->
+        <!-- ngFor to loop through the recipes array -->
+        <!-- <a href="#" class="list-group-item border my-2 p-3 clearfix" >
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h4 class="list-group-item-heading">Recipe Name</h4>
+              
+              <p class="list-group-text">recipe description </p>
+            </div>
+            <img src="" alt="" class="img-fluid rounded-circle" style="max-height: 50px;">
+          </div>
+        </a> -->
+        <!-- app-recipe-item component (if needed) -->
+        <!-- <app-recipe-item></app-recipe-item> -->
+        <!-- <div *ngFor="let category of mealCategories">
+            <div *ngFor="let category of mealCategories">
+                <div class="category-item">
+                  <div class="category-image">
+                    <img [src]="recipeService.getImageUrl(category.strCategoryThumb)" alt="Category Image">
+                  </div>
+                  <div class="category-name">
+                    {{ category.strCategory }}
+                  </div>
+                </div>
+              </div>
+              
+          
+      </div>
+    </div>
+  </div> -->
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Recipe List</h2>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Search by keyword" [(ngModel)]="searchTerm">
+            </div>
+          </div>
+          <div class="col-md-3">
+            <button class="btn btn-primary" (click)="performSearch()">Search</button>
+          </div>
+          <div class="col-md-3">
+            <div class="form-group">
+              <select class="form-control" [(ngModel)]="selectedCategory" (change)="fetchRecipesByCategory()">
+                  <option value="">Select a category</option>
+                  <option *ngFor="let category of categories" [ngValue]="category.strCategory">{{ category.strCategory }}</option>
+                </select>
+              </div>
+        </div>
+        
+          <div class="col-md-9">
+            <div class="row">
+              <!-- Loop through recipes and display recipe cards -->
+              <!-- <div class="col-md-4" *ngFor="let recipe of recipes"> -->
+                <app-recipe-card 
+                *ngFor="let recipe of recipes"
+                [recipe]="recipe"
+                (recipeClicked)="openRecipeDetails($event)"></app-recipe-card>
+              <!-- </div> -->
+            </div>
+            <div *ngIf="selectedRecipeId !== null && selectedRecipeId !== undefined">
+                <app-recipe-detail [recipeId]="selectedRecipeId"></app-recipe-detail>
+              </div>              
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  

@@ -12,7 +12,7 @@ import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.co
 const routes: Routes = [
   {path:'',component: HomeComponent}, //Default router
   {path: 'recipes', component: RecipeListComponent},
-  {path: 'recipe/:id', component: RecipeDetailComponent},
+  {path: 'meal/:id', component: RecipeDetailComponent},
   {path: 'mealplan',component: MealPlanComponent},
   {path: 'favorites', component: FavoriteRecipesComponent}
 ]

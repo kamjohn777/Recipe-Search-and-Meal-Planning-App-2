@@ -1,0 +1,14 @@
+
+<div class="recipe-card">
+     <a [routerLink]="['/meal', recipe.idMeal]">
+    <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
+  </a>
+    <h4>{{ recipe.strMeal }}</h4>
+    <p>{{ recipe.strCategory }}</p>
+    <button class="btn btn-primary" *ngIf="!isRecipeInFavorites(recipe.idMeal)" 
+    (click)="onFavoriteClick()">Favorite</button>
+
+    <!-- Display the view details button -->
+  <button (click)="onRecipeClick()">View Details</button>
+  </div>
+  

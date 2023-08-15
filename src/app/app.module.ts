@@ -10,6 +10,9 @@ import { ShoppingListComponent } from './shopping-list/shopping-list.component';
 import { FavoriteRecipesComponent } from './favorite-recipes/favorite-recipes.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './header/header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { RecipeCardComponent } from './recipe-card/recipe-card.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,14 @@ import { HeaderComponent } from './header/header.component';
     MealPlanComponent,
     ShoppingListComponent,
     FavoriteRecipesComponent,
-    HeaderComponent
+    HeaderComponent,
+    RecipeCardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule // Add AppRouting to imports
+    AppRoutingModule, // Add AppRouting to imports
+    HttpClientModule,
+    FormsModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

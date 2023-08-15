@@ -1,1 +1,24 @@
-<p>favorite-recipes works!</p>
+<!-- <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2>Favorites</h2> -->
+        <!-- Loop through favorite recipes and display recipe cards  -->
+         <!-- <app-recipe-card
+          *ngFor="let recipe of favoriteRecipes"
+          [recipe]="recipe"
+          (recipeClicked)="navigateToRecipeDetails(recipe.idMeal)"
+        ></app-recipe-card>
+      </div>
+    </div>
+  </div> -->
+
+  <div class="favorite-recipe" *ngFor="let recipe of favoriteRecipes">
+    <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
+    <h3>{{ recipe.strMeal }}</h3>
+    <p>{{ recipe.strInstructions }}</p>
+    
+    <!-- Display the delete button -->
+    <button (click)="removeFromFavorites(recipe.idMeal)">Remove from Favorites</button>
+  </div>
+  
+   <!-- <p>I work</p> -->

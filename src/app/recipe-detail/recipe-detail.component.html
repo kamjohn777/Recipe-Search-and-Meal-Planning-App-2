@@ -1,1 +1,17 @@
-<p>recipe-detail works!</p>
+<div class="recipe-detail" *ngIf="recipe">
+    <div class="recipe-info">
+      <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
+      <div class="recipe-description">
+        <h2>{{ recipe.strMeal }}</h2>
+        <p><strong>Category:</strong> {{ recipe.strCategory }}</p>
+        <p><strong>Area:</strong> {{ recipe.strArea }}</p>
+        <h3>Ingredients:</h3>
+      <ul>
+        <li *ngFor="let ingredient of getIngredients(recipe)"> {{ ingredient }}</li>
+      </ul>
+        <p><strong>Instructions:</strong> {{ recipe.strInstructions }}</p>
+      </div>
+    </div>
+    
+  </div>
+  
