@@ -1,9 +1,5 @@
-/* home.component.css */
-.container {
-    padding: 20px;
-    margin-top: 5%;;
-  }
-  
+
+
   h2 {
     font-size: 28px;
     margin-bottom: 10px;
@@ -14,3 +10,44 @@
     line-height: 1.6;
   }
   
+  /* src/styles.css */
+
+/* Define primary and secondary colors */
+:root {
+  --primary-color: #FF6B6B;
+  --secondary-color: #3B3B98;
+  --text-color: #333333;
+  --background-color: #F4F4F4;
+}
+
+/* Apply colors to specific elements */
+body {
+  background-color: #F4F4F4;
+  color: #333333;
+}
+
+.container {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 5%;
+}
+
+h1 {
+  color: #FF6B6B;
+}
+
+p {
+  color:#333333;
+}
+
+.btn-primary {
+  background-color: #FF6B6B;
+  border-color: #FF6B6B;
+}
+
+.btn-primary:hover {
+  background-color: #3B3B98;
+  border-color: #3B3B98;
+}
