@@ -9,7 +9,7 @@ import { FavoriteService } from '../services/favorite/favorite.service';
   templateUrl: './favorite-recipes.component.html',
   styleUrls: ['./favorite-recipes.component.css']
 })
-export class FavoriteRecipesComponent {
+export class FavoriteRecipesComponent  {
   favoriteRecipes: any[] = [];
 
   constructor(private router: Router,  private favoriteService: FavoriteService) {

@@ -12,13 +12,35 @@
     </div>
   </div> -->
 
-  <div class="favorite-recipe" *ngFor="let recipe of favoriteRecipes">
-    <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
+  <!-- <div class="favorite-recipe" *ngFor="let recipe of favoriteRecipes">
+    <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="rounded float-left recipe-image">
     <h3>{{ recipe.strMeal }}</h3>
-    <p>{{ recipe.strInstructions }}</p>
+    <p>{{ recipe.strInstructions }}</p> -->
     
     <!-- Display the delete button -->
-    <button (click)="removeFromFavorites(recipe.idMeal)">Remove from Favorites</button>
-  </div>
+    <!-- <button (click)="removeFromFavorites(recipe.idMeal)">Remove from Favorites</button>
+  </div> -->
   
    <!-- <p>I work</p> -->
+  <h1 class="text-center">Your Favorites</h1>
+   <div class="favorite-recipe" *ngFor="let recipe of favoriteRecipes">
+    <div class="row">
+      <div class="col-md-4">
+        <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="rounded mx-auto d-block recipe-image">
+      </div>
+      <div class="col-md-8">
+        <h3>{{ recipe.strMeal }}</h3>
+        <h4>Instructions:</h4>
+        <ul>
+          <li *ngFor="let ingredient of recipe.ingredients">{{ ingredient }}</li>
+        </ul>
+        <p>{{ recipe.strInstructions }}</p>
+  
+        <!-- Display the delete button -->
+        <button class="btn btn-danger" (click)="removeFromFavorites(recipe.idMeal)">Remove from Favorites</button>
+        <button class="btn btn-primary" (click)="navigateToRecipeDetails(recipe.idMeal)">View Details</button>
+      </div>
+    </div>
+    <hr>
+  </div>
+  

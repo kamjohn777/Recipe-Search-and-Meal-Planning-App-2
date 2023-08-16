@@ -64,6 +64,13 @@ export class RecipeListComponent implements OnInit {
     });
   }
 
+  onFavoriteClick(recipe: any): void {
+    this.favoriteRecipeService.addFavoriteRecipe(recipe);
+  }
+
+  isRecipeInFavorites(recipeId: string): boolean {
+    return this.favoriteRecipeService.isRecipeInFavorites(recipeId);
+  }
   
 
   openRecipeDetails(recipeId: string): void {

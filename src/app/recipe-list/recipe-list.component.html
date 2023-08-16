@@ -59,23 +59,33 @@
               </div>
         </div>
         
+        <div class="row">
           <div class="col-md-9">
             <div class="row">
               <!-- Loop through recipes and display recipe cards -->
-              <!-- <div class="col-md-4" *ngFor="let recipe of recipes"> -->
-                <app-recipe-card 
-                *ngFor="let recipe of recipes"
-                [recipe]="recipe"
-                (recipeClicked)="openRecipeDetails($event)"></app-recipe-card>
-              <!-- </div> -->
+              <div class="col-md-4" *ngFor="let recipe of recipes">
+                <div class="card" style="width: 18rem;">
+                  <img class="card-img-top" [src]="recipe.strMealThumb" [alt]="recipe.strMeal">
+                  <div class="card-body">
+                    <h5 class="card-title">{{ recipe.strMeal }}</h5>
+                    <p class="card-text">{{ recipe.strInstructions.slice(0, 100) }}...</p>
+                    <button class="btn btn-primary" (click)="openRecipeDetails(recipe.idMeal)">View Recipe</button>
+                    <button class="btn btn-secondary" *ngIf="!isRecipeInFavorites(recipe.idMeal)" (click)="onFavoriteClick(recipe)">Favorite</button>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div *ngIf="selectedRecipeId !== null && selectedRecipeId !== undefined">
-                <app-recipe-detail [recipeId]="selectedRecipeId"></app-recipe-detail>
-              </div>              
+            <div *ngIf="selectedRecipeId !== null">
+              <app-recipe-detail [recipeId]="selectedRecipeId"></app-recipe-detail>
+            </div>
           </div>
+        </div>
+        
         </div>
       </div>
     </div>
   </div>
+  
+
   
   

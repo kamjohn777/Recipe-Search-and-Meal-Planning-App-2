@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { RecipeService } from '../services/recipe/recipe.service';
 
 
@@ -13,7 +13,7 @@ export class RecipeDetailComponent implements OnInit {
   recipe: any; // Adjust the type if needed
   @Input() recipeId: string | undefined;
 
-  constructor(private route: ActivatedRoute, private recipeService: RecipeService) {}
+  constructor(private route: ActivatedRoute, private recipeService: RecipeService, private router: Router) {}
 
  
 
@@ -33,6 +33,10 @@ export class RecipeDetailComponent implements OnInit {
     }
 
     return ingredients;
+  }
+
+  navigateToRecipes(): void {
+    this.router.navigate(['/recipes']);
   }
 
 
