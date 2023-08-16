@@ -1,27 +1,54 @@
-# RecipeSearchAndMealPlanningApp
+# Recipe App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.6.
+Welcome to the Recipe App! This web application allows you to explore a variety of delicious recipes, plan your meals, and manage your favorite recipes. Whether you're a seasoned chef or a beginner, our app has something for everyone.
 
-## Development server
+## Table of Contents
+- [Features](#features)
+- [Demo](#demo)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Technologies Used](#technologies-used)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Features
 
-## Code scaffolding
+- Browse and search for recipes by keywords, categories, or ingredients.
+- View detailed recipe information including images, instructions, and ingredients.
+- Create a meal plan by assigning recipes to specific days of the week.
+- Mark your favorite recipes and access them easily.
+- Remove recipes from your favorites list.
+- Responsive and user-friendly interface.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Demo
 
-## Build
+https://64dd257e072b9c00888329fd--sparkling-melba-48b70a.netlify.app/
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Installation
 
-## Running unit tests
+1. Clone the repository:
+   git clone https://github.com/jgoog/Recipe-Search-and-Meal-Planning-App.git
+   
+2. Navigate to the project directory:
+   cd Recipe-Search-and-Meal-Planning-App
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+3. Install dependencies:
+   npm install
 
-## Running end-to-end tests
+4. Start the server:
+   npm start
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+5. Open your browser and go to http://localhost:4200 to access the app.
 
-## Further help
+## Usage
+- Browse and search for recipes using the search bar and filters.
+- Click on a recipe to view detailed information.
+- Add recipes to your favorites list by clicking the "Favorite" button.
+- Create a meal plan by selecting a day of the week and a recipe from the list.
+- Remove recipes from your favorites list by clicking the "Remove from Favorites" button.
+- Click the "Back to Recipes" button to return to the main recipe list.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## Technologies Used
+- Angular: Front-end framework for building dynamic web applications.
+- TypeScript: Programming language that enables static type-checking and modern ECMAScript features.
+- HTML and CSS: Standard web technologies for structuring and styling content.
+- Bootstrap: front-end development framework
+- TheMealDB API: Used to fetch recipes, pictures, and related data for the app.
