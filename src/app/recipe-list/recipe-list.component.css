@@ -1,0 +1,119 @@
+.btn-secondary {
+    background-color: purple;
+}
+
+.heart {
+    /* position: relative; */
+    position: absolute;
+    top: 7%;
+    left: 83%;
+    height: 20px;
+    width: 20px;
+    background: #c9c9c9;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0 0 0 4px;
+    transform: rotate(-45deg);
+    cursor: pointer;
+
+    /* border-right: none;
+    border-bottom: none;
+    border-left: none; */
+    /* border-left: none;
+    border-right: none;
+    border: 1px solid black; */
+}
+
+.heart.fill-color {
+    background-color: #ff2827;
+}
+
+.heart::before {
+    position: absolute;
+    content: "";
+    top: -50%;
+    width: 20px;
+    height: 20px;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.heart::after {
+    /* position: relative; */
+    position: absolute;
+    content: "";
+    right: -50%;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background: inherit;
+    border-radius: 50%;
+
+    /* position: relative;
+    content: "";
+    right: -13%;
+    top: 0;
+    width: 22px;
+    height: 83px;
+    background: inherit;
+    border-radius: 50%; */
+
+    /* position: relative;
+    content: "";
+    right: -13%;
+    top: 0;
+    width: 22px;
+    height: 83px;
+    background: inherit;
+    border-radius: 50%; */
+}
+
+.animation-heart {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    background: #ff2727;
+    transform: rotate(-45deg);
+    border-radius: 0 0 0 10px;
+    cursor: pointer;
+    animation: popup .8s linear;
+    visibility: hidden;
+}
+
+.animation-heart .animation {
+     animation: popup .8s linear;
+     visibility: visible;
+}
+
+.animation-heart::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: -50%;
+    right: 0;
+    background: inherit;
+    border-radius: 50%;
+}
+
+.animation-heart::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    top: 0;
+    right: -50%;
+    background: inherit;
+    border-radius: 50%;
+}
+
+@keyframes popup {
+    100% {
+        transform: scale(1.5) rotate(-45deg);
+        opacity: 0;
+    }
+}

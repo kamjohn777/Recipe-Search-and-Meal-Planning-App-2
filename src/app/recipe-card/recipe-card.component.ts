@@ -1,6 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
 import { FavoriteService } from '../services/favorite/favorite.service';
 
+
+
 @Component({
   selector: 'app-recipe-card',
   templateUrl: './recipe-card.component.html',

@@ -1,14 +1,25 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="./recipe-card.component.css">
+  <title>Document</title>
+</head>
+<body> -->
+  <div class="recipe-card">
+    <a [routerLink]="['/meal', recipe.idMeal]">
+   <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
+ </a>
+   <h4>{{ recipe.strMeal }}</h4>
+   <p>{{ recipe.strCategory }}</p>
+   <button id="test-btn" *ngIf="!isRecipeInFavorites(recipe.idMeal)" 
+   (click)="onFavoriteClick()">Favorite</button>
 
-<div class="recipe-card">
-     <a [routerLink]="['/meal', recipe.idMeal]">
-    <img src="{{ recipe.strMealThumb }}" alt="{{ recipe.strMeal }}" class="recipe-image">
-  </a>
-    <h4>{{ recipe.strMeal }}</h4>
-    <p>{{ recipe.strCategory }}</p>
-    <button class="btn btn-primary" *ngIf="!isRecipeInFavorites(recipe.idMeal)" 
-    (click)="onFavoriteClick()">Favorite</button>
+   <!-- Display the view details button -->
+ <button (click)="onRecipeClick()">View Details</button>
+ </div>
+<!-- </body>
+</html> -->
 
-    <!-- Display the view details button -->
-  <button (click)="onRecipeClick()">View Details</button>
-  </div>
   

@@ -71,6 +71,21 @@
                     <p class="card-text">{{ recipe.strInstructions.slice(0, 100) }}...</p>
                     <button class="btn btn-primary" (click)="openRecipeDetails(recipe.idMeal)">View Recipe</button>
                     <button class="btn btn-secondary" *ngIf="!isRecipeInFavorites(recipe.idMeal)" (click)="onFavoriteClick(recipe)">Favorite</button>
+                    <!-- we are going to test using this button -->
+                    <!-- <button id="btn-heat-id" class="btn-heart">Here is the test btn</button> -->
+
+
+
+                    <!-- <div #heart class="heart" (click)="onHeartClick()"></div> -->
+                    <!-- <div class="animation-heart" (click)="onAnimationHeartClick()"></div> -->
+                    <div class="heart" #heart (click)="onHeartClick()"   (click)="onFavoriteClick(recipe)"></div>
+                    <div class="animation-heart" #animationHeart (click)="onAnimationHeartClick()"   (click)="onFavoriteClick(recipe)"></div>
+
+
+                    <!-- <div class="heart"></div>
+                    <div class="animation-heart"></div> -->
+
+                    <script></script>
                   </div>
                 </div>
               </div>
@@ -85,7 +100,7 @@
       </div>
     </div>
   </div>
-  
+  <script src="./recipe-list.component.js"></script>
 
   
   
