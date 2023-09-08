@@ -1,5 +1,5 @@
 <!-- home.component.html -->
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -20,6 +20,134 @@
     </div>
   </div>
 </body>
-</html>
+</html> -->
+<!-- 
+<div class="main-div-container">
+  <div class="header-tag-div-contain">
+    <h1>Welcome to the Recipe and Meal Planning App</h1>
+  
+   
+      <input type="text" class="form-control" placeholder="Search by keyword" [(ngModel)]="searchTerm">
+    <button class="btn btn-primary" (click)="performSearch()">Search</button>
+</div>
+    
+    <div class="ul-div-container">
+      <ul class="home-ul">
+        <li class="home-ul-li">Entrees</li>
+        <li class="home-ul-li">Breakfast</li>
+        <li class="home-ul-li">Lunch</li>
+        <li class="home-ul-li">Deserts</li>
+        <li class="home-ul-li">Drinks</li>
+      </ul>
+    </div>
+  </div>
+</div> -->
+
+
+<div class="main-div-container">
+  <div class="header-tag-div-contain">
+    <h2>Welcome to the <span id="title-span1">Recipe</span>and Meal</h2>
+    <h2>Planning <span id="title-span2">App</span></h2>
+    <!-- Search input goes here -->
+   
+    <!-- <input type="text" class="form-control" placeholder="Search by keyword" [(ngModel)]="searchTerm"> -->
+    <!-- <button class="btn btn-primary" (click)="performSearch()">Search</button> -->
+  </div>
+    
+  <div class="search-input-div">
+    <input type="text">
+  </div>
+
+  <!-- <div class="ul-div-container">
+    <ul class="home-ul">
+      <li id="li-1" class="home-ul-li">Entrees</li>
+      <li id="li-2" class="home-ul-li">Breakfast</li>
+      <li id="li-3" class="home-ul-li">Lunch</li>
+      <li id="li-4" class="home-ul-li">Deserts</li>
+      <li id="li-5" class="home-ul-li">Drinks</li>
+    </ul>
+  </div> -->
+
+
+  <div class="image-section-div">
+   
+    <div class="isd-content-div">
+      <h2>The best place to manage <span>your recipes</span></h2>
+      <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium nam ducimus earum enim iste voluptatem doloremque ab impedit, labore nemo unde excepturi illo consequuntur vero.</p> -->
+      <p>  Get ready to explore a world of delicious recipes and plan your meals like never before.
+        Whether you're a seasoned chef or a beginner, our app has something for everyone.</p>
+      <a routerLink="/recipes" id="use" class="btn btn-primary">Get Started</a> 
+    </div>
+
+    <div id="blank-color-div"></div>
+
+    <div class="isd-image-div">
+      <img id="isd-image" src="https://images.immediate.co.uk/production/volatile/sites/30/2022/06/Chicken-and-halloumi-burgers-d751f9e.jpg">
+    </div>
+  </div>
+
+  <!-- Top rated -->
+  <div class="top-choices-div">
+    <div class="div-flex-1">
+      <div class="tcd-div-header">
+        <h3>Top Choices</h3>
+      </div>
+
+      <div class="ul-div-container">
+        <ul class="home-ul">
+          <li id="li-1" class="home-ul-li">Entrees</li>
+          <li id="li-2" class="home-ul-li">Breakfast</li>
+          <li id="li-3" class="home-ul-li">Lunch</li>
+          <li id="li-4" class="home-ul-li">Deserts</li>
+          <li id="li-5" class="home-ul-li">Drinks</li>
+        </ul>
+      </div>
+  
+      <div class="tcd-div1">
+        <div class="div-items">
+          <img src="https://expertphotography.b-cdn.net/wp-content/uploads/2020/06/dessert-photography-6.jpg" alt="">
+          <p>Chocolate Cake</p>
+          <button id="special">Deserts</button>
+        </div>
+  
+        <div class="div-items">
+          <img src="https://media.gettyimages.com/id/1280158821/photo/diverse-keto-dishes.jpg?s=612x612&w=gi&k=20&c=WaMrpBKPPoILMTtXGFShxrGVUtmsfGtfkR--mXOByUA=" alt="">
+          <p>Fries</p>
+          <button id="lunch-btn">Lunch</button>
+        </div>
+
+        <div class="div-items">
+          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dmVnYW58ZW58MHx8MHx8fDA%3D&w=1000&q=80" alt="">
+          <p>Vegan bowl</p>
+          <button id="entrees-btn">Entrees</button>
+        </div>
+    </div>
+   
+
+    <!-- <div class="div-flex-2"> -->
+<div class="tcd-div2">
+      <div class="div-items">
+        <img src="https://i.redd.it/rsn12s6w9n361.jpg" alt="">
+        <p>Burgers</p>
+        <button id="entrees-btn">Entrees</button>
+      </div>
+
+      <div class="div-items">
+        <img src="https://media.istockphoto.com/id/1388105989/photo/homemade-italian-pizza-carbonara-with-ham-and-basil-leaves-on-a-dark-background-top-view-with.webp?b=1&s=170667a&w=0&k=20&c=l5kGIXRPO0nbAnqZXpCFyF-_ob6MWrQHILdnj9NbyZM=" alt="">
+        <p>Pizza</p>
+        <button id="lunch-btn">Lunch</button>
+      </div>
+
+      <div class="div-items">
+        <img src="https://media.istockphoto.com/id/928823336/photo/grilled-chicken-breast-fried-chicken-fillet-and-fresh-vegetable-salad-of-tomatoes-cucumbers.jpg?s=612x612&w=0&k=20&c=x6KbcglhT_oxKEzCoSM5E8abP3rlEZAt7jQhlAPZtoY=" alt="">
+        <p>Chicken Breast</p>
+        <button id="entrees-btn">Entrees</button>
+      </div>
+    </div>
+      
+    </div>
+  </div>
+</div>
+
 
   
